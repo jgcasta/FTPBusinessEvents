@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<catalog name="iderail">
+<category>
+	<name>Categories</name>
+	<category>
+		<name>UploadaFile</name>
+		<function>
+			<name>upload</name>
+			<method>UploadFile</method>
+			<class>es.iderail.BusinessEvents.upload</class>
+			<args>ftpserver, username, passwd, sourcefile, destinationfile</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>Upload files</synopsis>
+			<args>
+			<paramdesc name="ftpserver"  type="String">ftpserver</paramdesc>
+			<paramdesc name="username"  type="String">username</paramdesc>
+			<paramdesc name="passwd"  type="String">passwd</paramdesc>
+			<paramdesc name="sourcefile"  type="String">sourcefile</paramdesc>
+			<paramdesc name="destinationfile"  type="String">destinationfile</paramdesc>												
+			</args>
+			<returns type="int">0 ,1, 2</returns>
+			</tooltip>
+		</function>
+	</category>
+	<category>
+		<name>DownloadaFile</name>
+		<function>
+			<name>download</name>
+			<method>DownloadFile</method>
+			<class>es.iderail.BusinessEvents.download</class>
+			<args>ftpserver, username, passwd, sourcefile, destinationfile</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>Download files</synopsis>
+			<args>
+			<paramdesc name="ftpserver"  type="String">ftpserver</paramdesc>
+			<paramdesc name="username"  type="String">username</paramdesc>
+			<paramdesc name="passwd"  type="String">passwd</paramdesc>
+			<paramdesc name="sourcefile"  type="String">sourcefile</paramdesc>
+			<paramdesc name="destinationfile"  type="String">destinationfile</paramdesc>												
+			</args>
+			<returns type="int">0 ,1, 2</returns>
+			</tooltip>
+		</function>
+	</category>
+	<category>
+		<name>DeleteaFile</name>
+		<function>
+			<name>delete</name>
+			<method>DeleteFile</method>
+			<class>es.iderail.BusinessEvents.deleteFile</class>
+			<args>ftpserver, username, passwd, sourcefile</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>Delete a file</synopsis>
+			<args>
+			<paramdesc name="ftpserver"  type="String">ftpserver</paramdesc>
+			<paramdesc name="username"  type="String">username</paramdesc>
+			<paramdesc name="passwd"  type="String">passwd</paramdesc>
+			<paramdesc name="sourcefile"  type="String">sourcefile</paramdesc>
+			</args>
+			<returns type="int">0 ,1, 2, 3</returns>
+			</tooltip>
+		</function>
+	</category>	
+	<category>
+		<name>MoveIntoMachine</name>
+		<function>
+			<name>moveFile</name>
+			<method>MoveFile</method>
+			<class>es.iderail.BusinessEvents.moveFile</class>
+			<args>ftpserver, username, passwd, sourcefile, destinationfile</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>Delete Files</synopsis>
+			<args>
+			<paramdesc name="ftpserver"  type="String">ftpserver</paramdesc>
+			<paramdesc name="username"  type="String">username</paramdesc>
+			<paramdesc name="passwd"  type="String">passwd</paramdesc>
+			<paramdesc name="sourcefile"  type="String">sourcefile</paramdesc>
+			<paramdesc name="destinationfile"  type="String">destinationfile</paramdesc>				
+			</args>
+			<returns type="int">0 ,1, 2, 3</returns>
+			</tooltip>
+		</function>
+	</category>	
+	<category>
+		<name>MoveToOtherMachine</name>
+		<function>
+			<name>MoveToMachine</name>
+			<method>moveToMachine</method>
+			<class>es.iderail.BusinessEvents.MoveToMachine</class>
+			<args>ftpserverO, ftpserverD, usernameO, passwdO, usernameD, passwdD, sourcefile, destinationfile</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>Move files between two machines</synopsis>
+			<args>
+			<paramdesc name="ftpserverO"  type="String">ftpserverO</paramdesc>
+			<paramdesc name="ftpserverD"  type="String">ftpserverD</paramdesc>
+			<paramdesc name="usernameO"  type="String">usernameO</paramdesc>
+			<paramdesc name="usernameO"  type="String">usernameD</paramdesc>D
+			<paramdesc name="passwdO"  type="String">passwdO</paramdesc>
+			<paramdesc name="passwdD"  type="String">passwdD</paramdesc>
+			<paramdesc name="sourcefile"  type="String">sourcefile</paramdesc>
+			<paramdesc name="destinationfile"  type="String">destinationfile</paramdesc>				
+			</args>
+			<returns type="int">0 ,1, 2, 3</returns>
+			</tooltip>
+		</function>
+	</category>	
+	<category>
+		<name>ListAllFiles</name>
+		<function>
+			<name>listFiles</name>
+			<method>ListFiles</method>
+			<class>es.iderail.BusinessEvents.listFiles</class>
+			<args>ftpserver, username, passwd, path</args>
+			<isActionOnly>true</isActionOnly>
+			<tooltip>
+			<synopsis>List files</synopsis>
+			<args>
+			<paramdesc name="ftpserver"  type="String">ftpserver</paramdesc>
+			<paramdesc name="username"  type="String">username</paramdesc>
+			<paramdesc name="passwd"  type="String">passwd</paramdesc>
+			<paramdesc name="path"  type="String">path</paramdesc>
+			</args>
+			<returns type="String[]">String[] or null </returns>
+			</tooltip>
+		</function>
+	</category>		
+</category>
+</catalog>
